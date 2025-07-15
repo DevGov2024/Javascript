@@ -1,23 +1,22 @@
-function somarNumero(){
+console.log(`Iniciar sorteiro`);
+
+
+function calcularSorteio(){
 
 let numero;
+let total = 0;
 
-let total =0;
 
-for(let i=0; i<=5; i++){
 
-numero=Math.floor(Math.random()*101);
+for(i=0;i<=5;i++){
+numero= Math.floor(Math.random()*100);
+console.log(`Luck:${numero}`);
 
-console.log(`${numero}`);
 total+=numero;
 
-
+}
+console.log(`${total}`);
 
 }
 
-console.log(`total:${total}`);
-
-
-}
-
-somarNumero();
+calcularSorteio();

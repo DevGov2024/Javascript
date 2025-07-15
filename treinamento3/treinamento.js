@@ -1,25 +1,21 @@
-// Cotação de valor 
+//cotação valor
 
-console.log(`Função de cotação`)
+console.log(`Conversão de valores`);
 
-function coversaoValor(valorReal, cotacao){
+function conversao(valorReal, cotacaoDolar){
+return(valorReal/cotacaoDolar);
 
-    return valorReal, cotacao;
+
 
 }
 
-const valorReal = Math.floor(Math.random()* 1000);
+const valorReal= Math.floor(Math.random()*1000);
+const cotacaoDolar = 5.55;
 
-const cotacaoDolar =5.55;
-
-
-const cotacaoDia = coversaoValor(valorReal, cotacaoDolar);
+const cotacaoDia= conversao(valorReal, cotacaoDolar);
 
 
-console.log(`Cotação real:${valorReal.toFixed(2)}`);
+console.log(`${valorReal.toFixed(2)}`);
+console.log(`${cotacaoDolar}`);
 
-console.log(`Cotação dolar: ${cotacaoDolar}`);
-
-console.log(`cotação final:${cotacaoDia.toFixed(2)}`); 
-
-
+console.log(`${cotacaoDia.toFixed(2)}`);

@@ -1,12 +1,17 @@
-function calcularTabuada(numero=0){
+// Fazer uma tabuada
+console.log(`Iniciar tabuada`);
 
-console.log(`Calcular a tabuada do: ${numero}`);
 
-for(i=0;i<=10;i++){
- console.log(`${numero}*${i} = ${numero*i}`);  
+function tabuada(numero=0){
+
+console.log(`Fazer a tabuada do número: ${numero}`);
+
+for(z=0;z<=10;z++){
+
+console.log(`${numero}* ${z} = ${numero * z}`);
+
 }
-console.log(`Fim da tabuada`);
-
+ console.log(`Fim da tabuada`);
 }
 
-calcularTabuada(5);
+tabuada(10);
