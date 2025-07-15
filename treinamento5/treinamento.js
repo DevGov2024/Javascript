@@ -1,16 +1,22 @@
-const gerarSenha= () => { const caracteres = 'MSLTHETRIPPONFIGHER'; 
+//Gerar novas senhas diariamente
 
-let password ='';
+const gerarSenha = ()=>{const caracteres='ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&';
 
-for(z=0; z<=4;z++){
+let novaSenha = '';
 
-indice = Math.round(Math.random()* caracteres.length);
+for(i=0; i<=5;i++){
 
-password += caracteres[indice];
+const indice = Math.round(Math.random()* caracteres.length);
+
+novaSenha+=caracteres[indice];
 
 }
-return password;
+
+return novaSenha;
 }
 
-console.log(`Sua senha é: ${gerarSenha()}`);
+console.log(`Senha gerada: ${gerarSenha()}`);
+
+
+
 
