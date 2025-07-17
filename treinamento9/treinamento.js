@@ -1,31 +1,28 @@
-const premio = new Array ('Carro', 'casa','dinheiro',);
+const selecionado = new Array('Bruno', 'ótávio', 'Gilmar');
 
-const premio2 =['Celular', 'Ventilador', 'Notebook'];
-
-
+const selecionadas = ['Maria', 'Carla', 'Merlinda'];
 
 
-premio.sort();
-premio2.sort();
+console.log(selecionado);
+
+console.log(selecionadas);
 
 
-const todoPremio = premio.concat(premio2);
-console.log(premio);
-console.log(premio2);
-console.log(todoPremio);
+console.log(selecionado.length);
+console.log(selecionadas.length);
 
-premio.unshift( 'Cobertura');
+selecionado.unshift('Marlon');
+selecionadas.unshift('Bruna');
+console.log(selecionado);
+console.log(selecionadas);
 
-console.log(premio);
+selecionado.push('Ricardo');
+console.log(selecionado);
 
-console.log(premio.length);
+selecionado.shift();
+selecionado.pop();
+console.log(selecionado);
 
-premio.push('Moto');
+const todosJuntos= selecionado.concat(selecionadas);
 
-console.log(premio);
-
-premio.shift(0);
-console.log(premio);
-
-premio.pop(1);
-console.log(premio);
+console.log(todosJuntos);

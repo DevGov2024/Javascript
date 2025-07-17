@@ -1,16 +1,8 @@
 const herois =['Iron-man','Aunt-man', 'Spider-man', 'Vesp', 'Black widow'];
 
 
-herois.forEach(heroi =>{
-    const agilidade = Math.ceil(Math.random()*100);
+for(const heroi in herois){
 
-    console.log(`${heroi} e ${agilidade}`);
-})
+ console.log(`${heroi}, ${herois[heroi]}`);
 
-
-
-herois.forEach(heroi=>{
-    const agilidade = Math.ceil(Math.random()*100);
-
-    console.log(`O herói tem um nível de poder de: ${heroi} e agilidade ${agilidade}`);
-})
+}

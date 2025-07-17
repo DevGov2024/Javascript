@@ -1,18 +1,17 @@
-function Usuarios(id, nome, idade, email, profissao){
+function usuarios (nome, email){
 
-    this.id = id;
-    this.nome= nome;
-    this.idade = idade;
-    this.email = email;
-    this.profissao = profissao;
+this.nome = nome;
 
-
+this.email =email;
 
 
 
 
 }
 
-const usuario1=new Usuarios(12343, 'Gabriel', 21, 'mouraghbm@gmaIL.com', 'analista de sistemas');
+const Usuario1 = new usuarios('Gabriel', 'ghbm');
 
-console.log(usuario1);
+const Usuario2 = new usuarios('M', 'ggh@gmail');
+
+console.log(Usuario1);
+console.log(Usuario2);

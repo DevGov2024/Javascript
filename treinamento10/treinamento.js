@@ -1,12 +1,7 @@
-const Vingadores = ['Thor', 'Hulk', 'Capitão América'];
+const selecionados =['Bruna', 'Marcos', 'Lara', 'Felipe', 'Ernesto', 'Bianca'];
 
-for(let i = 0 ; i<=Vingadores.length; i++){
+for(z=0; z<=selecionados.length;z++){
 
-      console.log(`O valor do índice é:${i}, e ${Vingadores[i]}`)
-
-}
-
-for(const Vingador in Vingadores){
-      console.log((`${Vingador}, ${Vingadores[Vingador]}`));
+console.log(`O índice: ${z} faz parte do selecionado ${selecionados[z]}`);
 
 }
